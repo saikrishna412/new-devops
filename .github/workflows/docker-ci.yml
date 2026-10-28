@@ -1,9 +1,7 @@
-name: Java Quality and Docker CI
+name: Java CI
 
 on:
   push:
-    branches: [main]
-  pull_request:
     branches: [main]
   workflow_dispatch:
 
@@ -12,7 +10,7 @@ permissions:
 
 jobs:
   quality:
-    name: Code Quality and Tests
+    name: Code Quality 
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source code
